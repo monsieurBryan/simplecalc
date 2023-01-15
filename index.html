@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculator</title> 
+</head>
+<body>
+
+  <div id="container">
+
+    <div id="calc">
+      <h1 id="calctitle">Calculadora<ion-icon id="icon" name="logo-javascript"></ion-icon></h1>
+
+      <input type="text" id="result" class="noselect">
+
+      <div id="gridbuttons">
+        <button id="clean">C</button>
+        <button class="btnCalc" data-value=" ( ">(</button>
+        <button class="btnCalc" data-value=" ) ">)</button>
+        <button class="btnCalc" data-value="7">7</button>
+        <button class="btnCalc" data-value="8">8</button>
+        <button class="btnCalc" data-value="9">9</button>
+        <button class="btnCalc" data-value="4">4</button>
+        <button class="btnCalc" data-value="5">5</button>
+        <button class="btnCalc" data-value="6">6</button>
+        <button class="btnCalc" data-value="1">1</button>
+        <button class="btnCalc" data-value="2">2</button>
+        <button class="btnCalc" data-value="3">3</button>
+        <button class="btnCalc" data-value=" - ">-</button>
+        <button class="btnCalc" data-value=" + ">+</button>
+        <button class="btnCalc" data-value="0">0</button>
+        <button class="btnCalc" data-value=" * ">*</button>
+        <button class="btnCalc" data-value=" / ">/</button>
+        <button id="equal">=</button>
+      </div>
+
+      <input type="text" id="total" class="noselect" value="0">
+    </div>
+  </div>
+  <footer id="footer">
+    <p id="developed">Desenvolvido por Bryan Lucas Campos Lewergger</p>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="index.js" defer></script>
+</body>
+</html>
