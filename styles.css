@@ -110,14 +110,6 @@ button{
   border-radius: 8px;
 }
 
-.btnCalc:hover, #equal:hover, #clean:hover{
-  cursor: pointer;
-  transition: 0.4s;
-  background-color: #fe60557e;
-  color: var(--font-color);
-  max-height: 100%;
-}
-
 #footer {
   display: flex;
   flex-wrap: wrap;
@@ -146,16 +138,6 @@ button{
 }
 
 @media (max-width: 500px) {
-  .btnCalc, #equal, #clean{
-    transition: 0s;
-  }
-
-  .btnCalc:hover, #equal:hover, #clean:hover{
-    background-color: #fe60557e;
-    color: var(--font-color);
-    transition: 0s;
-  }
-
   #gridbuttons{
     width: 325px;
     height: 390px;
@@ -170,8 +152,10 @@ button{
 
 @media (hover: hover) {
   .btnCalc:hover, #equal:hover, #clean:hover{
+    cursor: pointer;
+    transition: 0.4s;
     background-color: #fe60557e;
     color: var(--font-color);
-    transition: 0.4s;
+    max-height: 100%;
   }
 }
