@@ -145,7 +145,7 @@ button{
   text-align: center;
 }
 
-@media (max-width: 393px){
+@media (max-width: 500px){
   .btnCalc, #equal, #clean{
     transition: 0s;
   }
