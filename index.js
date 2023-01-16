@@ -13,6 +13,7 @@ const handleButtonPress = (ev) => {
 
 const handleTyping = (ev) => {
   ev.preventDefault()
+  const input = document.querySelector('#result')
   const allowedKeys = ["(", ")", "/", "*", "-", "+", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", ".", "%", " "]
 
   if (allowedKeys.includes(ev.key)){
