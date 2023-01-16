@@ -47,7 +47,7 @@ button{
 
 #container{
   display: flex;
-  min-height: 95.8vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -143,4 +143,27 @@ button{
   background-color: var(--error-color);
   font-size: 15px;
   text-align: center;
+}
+
+@media (max-width: 393px){
+  .btnCalc, #equal, #clean{
+    transition: 0s;
+  }
+
+  .btnCalc:hover, #equal:hover, #clean:hover{
+    background-color: #fe60557e;
+    color: var(--font-color);
+    transition: 0s;
+  }
+
+  #gridbuttons{
+    width: 325px;
+    height: 390px;
+  }
+
+  #result, #total{
+    height: 70px;
+    width: 325px;
+    font-size: 21px;
+  }
 }
